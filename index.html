@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>LOL Login</title>
+</head>
+<body>
+    
+<main>
+    
+    <div id="img-logo">
+        <img src="teste logo.png" width="366" height="220"/>
+    </div>
+
+    <div id="login">
+        <h2>  Account Login  </h2>
+        
+        <form action="">
+
+            <label for="username" class="username-password">Username</label>
+            <input type="username" id="username" name="username" class="preencher-form" required>
+
+            <label for="password"  class="username-password">Password</label>
+            <input type="password" id="password" name="password" class="preencher-form" required>
+            <br>
+            <input type="checkbox" id="checkbox-form"  class="checkbox" name="lembrar-senha">
+            <label for="checkbox" class="remember">Remember Username</label>
+
+            <button type="button" id="btn-login" onclick="login()">Log In</button>
+
+                <div id="dont-have-forgot">        
+                       
+                        <small class="do-not-account">Don't have an Account?</small>
+                        <a class="esqueceu" href="recuperar.html" id="new-login">
+                        Sign up Now <a>!</a>
+                        <br>
+                        </a> 
+                        <small> 
+                        Forgot your 
+                        </small>
+                        <a href="recuperar.html" id="forgot-username" class="esqueceu">
+                        Username<a>?</a>
+                        </a> 
+                        <br>
+                        <small>
+                        Forgot your 
+                        </small>
+                        <a href="recuperar.html" id="forgot-password" class="esqueceu">
+                        Password<a>?</a>
+                        </a> 
+                </div>
+        </form>
+    </div>
+        <div id="text-after-form">
+        <a > Playing League of Legends is  </a> <a id="FREE">FREE</a> <a id="exclamacao">!</a>
+        </div>
+
+    <div id="therms-use">
+
+        <!-- falta imagem de logo aqui -->
+
+        <p id="text-terms">Terms of Use</p>
+        
+        <input type="checkbox" id="checkbox-music"  class="checkbox">
+        <label for="checkbox" class="disable" >Disable Login Music</label>
+        <br>
+        <input type="checkbox" id="checkbox-animations"  class="checkbox">
+        <label for="checkbox" class="disable" >Disable Menu Animations</label>
+
+    </div>
+
+    
+</main>
+</body>
+</html>
+
+    <script>
+
+        
+    function login(){
+        
+        alert(" Login done, going to download League Of Legends ")
+        window.location.href = "https://signup.leagueoflegends.com/pt-br/signup/redownload";
+        
+        return false;
+    }
+
+    </script>
